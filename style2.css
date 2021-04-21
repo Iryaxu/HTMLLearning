@@ -39,3 +39,9 @@ a:visited
 {
     text-align: center;
 }
+
+img
+{
+    height:140px;
+    width:140px; 
+}
