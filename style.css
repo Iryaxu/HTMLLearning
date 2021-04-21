@@ -43,6 +43,7 @@ a:visited
 
 footer
 {
+    width: 50%;
     text-align: center;
     outline: 1px solid black
 }
