@@ -49,3 +49,9 @@ footer
     text-align: center;
     outline: 1px solid black
 }
+
+#conteneur
+{
+    display: flex;
+    flex-direction: column;
+}
