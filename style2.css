@@ -46,6 +46,8 @@ img
 footer
 {
     width: 50%;
+    margin-left: 50%;
+    padding-right: 50%;
     text-align: center;
     outline: 1px solid black
 }
