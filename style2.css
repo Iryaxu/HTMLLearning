@@ -44,5 +44,6 @@ img
 
 footer
 {
-    border:black, solid, 3px;
+    text-align: justify;
+    outline: 1px solid black
 }
