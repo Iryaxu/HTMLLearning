@@ -1,7 +1,6 @@
 *
 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    text-align: center;
 }
 
 .titre
@@ -36,13 +35,18 @@ a:visited
     color: #1122CC
 }
 
-.footer
-{
-    text-align: center;
-}
-
 img
 {
     height:140px;
     width:140px; 
+}
+
+.left
+{
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
 }

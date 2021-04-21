@@ -1,7 +1,6 @@
 *
 {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    text-align: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif
 }
 
 .test
@@ -41,7 +40,12 @@ a:visited
     color:  #1122CC
 }
 
-.footer
+.left
 {
-    text-align: center;
+    text-align: left;
+}
+
+.right
+{
+    text-align: right;
 }

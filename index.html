@@ -10,11 +10,28 @@
 
     <body>
         
-        <div class="mode">
-            Dark mode:             
-            <span class="change">OFF</span>
-        </div>
-    
+        <nav>
+
+            <div class="mode">
+                Dark mode:             
+                <span class="change">OFF</span>
+            </div>
+            
+            <script>
+                $( ".change" ).on("click", function() {
+                    if( $( "body" ).hasClass( "dark" )) {
+                        $( "body" ).removeClass( "dark" );
+                        $( ".change" ).text( "OFF" );
+                    } 
+                    else {
+                        $( "body" ).addClass( "dark" );
+                        $( ".change" ).text( "ON" );
+                    }
+                });
+            </script>
+
+        </nav>
+
         <h1 class = "titre">Hello World!</h1>
 
             <h2>Informations</h2>
@@ -29,33 +46,30 @@
                     <p>Direct Download: <a href="Assets/Apps/Pong1972.zip">Clique içi !</a>
                 <h4>Plus ou moins++</h4>
                     <p>Direct Download: <a href="Assets/Apps/PlusOuMoins++.zip">Clique içi !</a>
-
-            <h2>Mes comptes</h2>
-            <ul>
-                <li>Gmail: <a href="mailto:ayoub.bnoussaid.joconde@gmail.com" title="Clique et envoie moi un mail">ayoub.bnoussaid.joconde@gmail.com </a></li>
-                <li>Reddit: <a href="https://www.reddit.com/user/Iryaxu___" title="Mon profil sur Reddit">u/Iryaxu___</a></li>
-                <li>Discord: @Iryaxu#9895</li>
-                <li>Roblox: <a href="https://web.roblox.com/users/2344957408/profile" title="Mon profil sur Roblox">Iryaxu2</a></li>
-            </ul>
             
             <h2>Zone de Test</h2>
                 <p><strong>Je suis un texte fort !</strong></p>
                 <p><em>Je suis un texte italique !</em></p>
                 <p><mark>Je suis un texte marqué !</mark></p>
                 <p class="test">Je suis un texte violet !</p>
-               <footer class ="footer"><a href="Page 2.html">Aller à la Deuxieme Page?</a></footer>
+            
+            <footer>
 
-            <script>
-                $( ".change" ).on("click", function() {
-                    if( $( "body" ).hasClass( "dark" )) {
-                        $( "body" ).removeClass( "dark" );
-                        $( ".change" ).text( "OFF" );
-                    } else {
-                        $( "body" ).addClass( "dark" );
-                        $( ".change" ).text( "ON" );
-                        }
-                });
-            </script>
+                <a href = "index.html" class = "left">Revenir a la premiere page ?</a>
+
+                <ul>
+
+                    <h4 class = "right">Mes comptes :</h4>
+                    <li class = "right">Gmail: <a href="mailto:ayoub.bnoussaid.joconde@gmail.com" title="Clique et envoie moi un mail">ayoub.bnoussaid.joconde@gmail.com </a></li> </p>
+                    <li class = "right">Reddit: <a href="https://www.reddit.com/user/Iryaxu___" title="Mon profil sur Reddit">u/Iryaxu___</a></li>
+                    <li class = "right">Discord: @Iryaxu#9895</li>
+                    <li class = "right">Roblox: <a href="https://web.roblox.com/users/2344957408/profile" title="Mon profil sur Roblox">Iryaxu2</a></li>
+
+                </ul>
+            
+            </footer>
+
+            
 
     </body>
 </html>

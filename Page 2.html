@@ -1,39 +1,74 @@
 <!DOCTYPE html>
+
 <html>
+    
     <head>
+
         <meta charset="utf-8" />
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/favicon.ico">
         <link rel="stylesheet" href="style2.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <title>Page 2</title>
+    
     </head>
 
     <body>
+
+        <header>
+            
+            <h1 class = "titre">2eme Page</h1>
+
+        </header>
         
-        <div class="mode">
-            Dark mode:             
-            <span class="change">OFF</span>
-        </div>
+        <nav>
+            
+            <div class="mode">
+                Dark mode:             
+                <span class="change">OFF</span>
+            </div>
+            
+            <script>
+                $( ".change" ).on("click", function() {
+                    if( $( "body" ).hasClass( "dark" )) {
+                        $( "body" ).removeClass( "dark" );
+                        $( ".change" ).text( "OFF" );
+                    } else {
+                        $( "body" ).addClass( "dark" );
+                        $( ".change" ).text( "ON" );
+                    }
+                });
+            </script>
+            
+        </nav>         
+
+        <section>
+            
+            <article>
+                <p>Bonjour !</p>
+                <p>Je suis la deuxieme page!</p>
+                <p>Prends un nugget tant que tu est la !</p>
+                <a href="Assets/Images/nugget.gif"><img src="Assets/Images/nugget.gif" alt="Chicken Nuggets" title="Prends Le !" /></a>
+                <p>Tu veut des informations sur le HTML et le CSS ? <a href="Assets/Le HTML Le CSS.pptx" title="Clique pour telecharger ma presentation sur le HTML et le CSS"> Tiens !</a></p>
+            </article>
+            
+        </section>       
         
-        <h1 class = "titre">2eme Page</h1>
-        <p>Bonjour !</p>
-        <p>Je suis la deuxieme page!</p>
-        <p>Prends un nugget tant que tu est la !</p>
-        <a href="Assets/Images/nugget.gif"><img src="Assets/Images/nugget.gif" alt="Chicken Nuggets" title="Prends Le !" /></a>
-        <p>Tu veut des informations sur le HTML et le CSS ? <a href="Assets/Le HTML Le CSS.pptx" title="Clique pour telecharger ma presentation sur le HTML et le CSS"> Tiens !</a></p>
-        <footer class ="footer"><a href ="index.html">Revenir a la premiere page ?</a></footer>
-        
-        <script>
-            $( ".change" ).on("click", function() {
-                if( $( "body" ).hasClass( "dark" )) {
-                    $( "body" ).removeClass( "dark" );
-                    $( ".change" ).text( "OFF" );
-                } else {
-                    $( "body" ).addClass( "dark" );
-                    $( ".change" ).text( "ON" );
-                }
-            });
-        </script>
+        <footer>
+
+            <a href = "index.html" class = "left">Revenir a la premiere page ?</a>
+            
+            <ul>
+
+                <h4 class = "right">Mes comptes :</h4>
+                <li class = "right">Gmail: <a href="mailto:ayoub.bnoussaid.joconde@gmail.com" title="Clique et envoie moi un mail">ayoub.bnoussaid.joconde@gmail.com </a></li> </p>
+                <li class = "right">Reddit: <a href="https://www.reddit.com/user/Iryaxu___" title="Mon profil sur Reddit">u/Iryaxu___</a></li>
+                <li class = "right">Discord: @Iryaxu#9895</li>
+                <li class = "right">Roblox: <a href="https://web.roblox.com/users/2344957408/profile" title="Mon profil sur Roblox">Iryaxu2</a></li>
+
+            </ul>
+
+        </footer>
 
     </body>
+
 </html>
