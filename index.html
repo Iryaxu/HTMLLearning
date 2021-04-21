@@ -4,6 +4,39 @@
         <meta charset="utf-8" />
         <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <style>
+            body
+            {
+                padding:10% 3% 10% 3%;
+                text-align:center;
+            }
+            img
+            {
+                height:140px;
+                width:140px; 
+            }
+            h1
+            {
+            color: #32a852;
+            }
+            .mode {
+                float:right;
+            }
+            .change {
+                cursor: pointer;
+                border: 1px solid #555;
+                border-radius: 40%;
+                width: 20px;
+                text-align: center;
+                padding: 5px;
+                margin-left: 8px;
+            }
+            .dark{
+                background-color: #222;
+                color: #e6e6e6;
+                }
+        </style>
         <title>Hello World</title>
     </head>
 
@@ -39,5 +72,16 @@
                 <p class="test">Je suis un texte violet !</p>
                 <p>Je suis la <a href="Page 2.html">Deuxieme Page!</a></p>
 
+            <script>
+                $( ".change" ).on("click", function() {
+                    if( $( "body" ).hasClass( "dark" )) {
+                        $( "body" ).removeClass( "dark" );
+                        $( ".change" ).text( "OFF" );
+                    } else {
+                        $( "body" ).addClass( "dark" );
+                        $( ".change" ).text( "ON" );
+                    }
+                });
+            </script>
     </body>
 </html>
