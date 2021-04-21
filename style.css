@@ -43,10 +43,7 @@ a:visited
 
 .left
 {
-    text-align: left;
+    text-align: end;
+    border: solid;
 }
 
-.right
-{
-    text-align: right;
-}

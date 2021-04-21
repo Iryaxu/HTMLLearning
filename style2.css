@@ -44,10 +44,6 @@ img
 
 .left
 {
-    text-align: left;
-}
-
-.right
-{
-    text-align: right;
+    text-align: end;
+    border: solid;
 }
