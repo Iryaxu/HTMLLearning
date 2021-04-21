@@ -44,6 +44,6 @@ a:visited
 .left
 {
     text-align: end;
-    border: solid;
+    border:black, solid, 3px;
 }
 
