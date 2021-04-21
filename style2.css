@@ -42,8 +42,7 @@ img
     width:140px; 
 }
 
-.left
+.right
 {
-    text-align: end;
-    border: solid;
+    border:black, solid, 3px;
 }
