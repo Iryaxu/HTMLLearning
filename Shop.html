@@ -11,7 +11,62 @@
 
     <body>
         
-        <h1>Nugget Shop</h1>
+        <header>
+            <h1>Nugget Shop</h1>
+        </header>
+
+        <nav>
+
+            <div class="mode">
+                Dark mode:             
+                <span class="change">OFF</span>
+            </div>
+            
+            <script>
+                $( ".change" ).on("click", function() {
+                    if( $( "body" ).hasClass( "dark" )) {
+                        $( "body" ).removeClass( "dark" );
+                        $( ".change" ).text( "OFF" );
+                    } 
+                    else {
+                        $( "body" ).addClass( "dark" );
+                        $( ".change" ).text( "ON" );
+                    }
+                });
+            </script>
+
+        </nav>
+
+        <section>
+
+            <div id = "conteneur">
+
+                <article class = "article1">
+
+                    
+
+                </article>
+
+            </div>
+
+        </section>
+        
+        <footer>
+
+            <ul>
+
+                <h4>Mes comptes :</h4>
+                <li>Gmail: <a href="mailto:ayoub.bnoussaid.joconde@gmail.com" title="Clique et envoie moi un mail">ayoub.bnoussaid.joconde@gmail.com </a></li> </p>
+                <li>Reddit: <a href="https://www.reddit.com/user/Iryaxu___" title="Mon profil sur Reddit">u/Iryaxu___</a></li>
+                <li>Discord: @Iryaxu#9895</li>
+                <li>Roblox: <a href="https://web.roblox.com/users/2344957408/profile" title="Mon profil sur Roblox">Iryaxu2</a></li>
+
+            </ul>
+
+            <a href = "index.html" style="text-align: left;">Aller a la deuxieme page ?</a> 
+            <a href = "Page 2.html" style="text-align: right;">Aller au shop ?</a>
+            
+        </footer>
 
     </body>
 

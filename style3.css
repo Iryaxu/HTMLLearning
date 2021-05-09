@@ -7,3 +7,31 @@ h1
 {
     text-align: "center";
 }
+
+.dark
+{
+    background-color: #222;
+    color: #e6e6e6;
+    outline-color: white;
+}
+
+.mode 
+{
+    float:right;
+}
+
+.change 
+{
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 40%;
+    width: 20px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+}
+
+a:visited
+{
+    color: #1122CC
+}
