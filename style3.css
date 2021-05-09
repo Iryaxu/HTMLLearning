@@ -3,7 +3,7 @@
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-h1
+.title
 {
     text-align: "center";
 }
@@ -38,6 +38,6 @@ a:visited
 
 img
 {
-    width: 200;
-    height: 200;
+    width: 140;
+    height: 140;
 }
