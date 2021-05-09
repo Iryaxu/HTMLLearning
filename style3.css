@@ -35,3 +35,9 @@ a:visited
 {
     color: #1122CC
 }
+
+img
+{
+    width: 200;
+    height: 200;
+}
